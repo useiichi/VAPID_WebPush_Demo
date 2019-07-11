@@ -1,2 +1,2 @@
 # VAPID_WebPush_Demo
-VAPID Web Push Notification
+VAPIDによるWebPush通知デモ
