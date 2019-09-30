@@ -9,5 +9,5 @@ self.addEventListener('push', evt => {
     evt.waitUntil(self.registration.showNotification(title, options));
 });
 self.addEventListener('notificationclick', evt => {
-    evtt.notification.close();
+    evt.notification.close();
 });
