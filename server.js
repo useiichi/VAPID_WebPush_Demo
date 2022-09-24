@@ -21,7 +21,7 @@ router
     .post('/webpushtest', koaBody(), async ctx => {
         try {
             setTimeout(_ => { // ちょっと遅延させて通知
-                await webPush.sendNotification(ctx.request.body, JSON.stringify({
+                webPush.sendNotification(ctx.request.body, JSON.stringify({
                     title: 'Web Push通知テスト',
                 }));
             }, 5000);
